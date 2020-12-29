@@ -6,7 +6,7 @@ import (
 	"github.com/spf13/cobra"
 )
 
-var RoootCmd = &cobra.Command{
+var RootCmd = &cobra.Command{
 	Use:   "culc",
 	Short: "command line calculator",
 	Run: func(cmd *cobra.Command, args []string) {
