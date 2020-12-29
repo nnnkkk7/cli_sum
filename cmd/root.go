@@ -13,3 +13,10 @@ var RootCmd = &cobra.Command{
 		fmt.Println("root command")
 	},
 }
+
+func init() {
+	cobra.OnInitialize()
+	RootCmd.AddCommand(
+		sumCmd(),
+	)
+}
